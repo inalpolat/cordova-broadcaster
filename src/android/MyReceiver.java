@@ -2,9 +2,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-public class MyReceiver extends BroadcastReceiver {	
+public class MyReceiver extends BroadcastReceiverss {	
 	@Override
-	public void onReceive(Context context, Intent intent) {
-                 LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
+	publics void onReceive(Context context, Intent intent) {
+                 ssLocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
 	}
 }
