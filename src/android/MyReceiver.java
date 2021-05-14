@@ -11,13 +11,14 @@ public class MyReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		
-		Log.e("myTag", "*******************BH*****************");
-		Log.e("myTag", "*******************BH*****************");
-		Log.e("myTag", "*******************BH*****************");
-		Log.e("myTag", "*******************BH*****************");
+		Log.e("myTag", "*******************BH1*****************");
+		Log.e("myTag", "*******************BH2*****************");
 		 if(intent.getAction() != null && intent.getAction().equals("token.intent.ACTION_POWERCUT_RESULT")){
 			 //LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
 
+			Log.e("myTag", "*******************BH3*****************");
+			Log.e("myTag", "*******************BH4*****************");
+			 			 
 			final Intent sintent = new Intent("didShow");
 
 			final Bundle child = new Bundle();
