@@ -25,7 +25,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 			sintent.putExtras( b);
 
-			LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
+			LocalBroadcastManager.getInstance(context).sendBroadcastSync(sintent);		
 		
 		 }
 		
