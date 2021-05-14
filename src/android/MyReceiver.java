@@ -22,7 +22,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 		intent.putExtras( b);
 
-		LocalBroadcastManager.getInstance(this).sendBroadcastSync(intent);		
+		LocalBroadcastManager.getInstance(super.webView.getContext()).sendBroadcast(intent);		
 		
 		
 	}
