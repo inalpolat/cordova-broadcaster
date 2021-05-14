@@ -59,13 +59,6 @@ class Optional<T>  {
 
 
 
-public class MyReceiver extends BroadcastReceiver {	
-	@Override
-	public void onReceive(Context context, Intent intent) {
-                 LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
-	}
-}
-
 
 /**
  * This class echoes a string called from JavaScript.
