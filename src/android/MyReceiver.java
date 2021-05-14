@@ -10,6 +10,10 @@ public class MyReceiver extends BroadcastReceiver {
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		
+		Log.e("myTag", "*******************BH*****************");
+		Log.e("myTag", "*******************BH*****************");
+		Log.e("myTag", "*******************BH*****************");
+		Log.e("myTag", "*******************BH*****************");
 		 if(intent.getAction() != null && intent.getAction().equals("token.intent.ACTION_POWERCUT_RESULT")){
 			 //LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
 
