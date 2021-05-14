@@ -11,7 +11,7 @@ public class MyReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
                  //LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
 
-		final Intent intent = new Intent("didShow");
+		final Intent sintent = new Intent("didShow");
 
 		final Bundle child = new Bundle();
 		child.putString( "name", "joker");
@@ -21,9 +21,9 @@ public class MyReceiver extends BroadcastReceiver {
 		b.putBoolean( "valid", true );
 		b.putBundle( "child", child );
 
-		intent.putExtras( b);
+		sintent.putExtras( b);
 
-		LocalBroadcastManager.getInstance(super.webView.getContext()).sendBroadcast(intent);		
+		LocalBroadcastManager.getInstance(super.webView.getContext()).sendBroadcast(sintent);		
 		
 		
 	}
