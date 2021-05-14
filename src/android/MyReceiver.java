@@ -3,6 +3,7 @@ package org.bsc.cordova;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
 
 public class MyReceiver extends BroadcastReceiver {	
