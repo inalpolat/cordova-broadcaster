@@ -32,7 +32,10 @@ public class MyReceiver extends BroadcastReceiver {
 			sintent.putExtras( b);
 
 			LocalBroadcastManager.getInstance(context).sendBroadcastSync(sintent);		
-		
+
+			Log.e("myTag", "*******************BH5*****************");
+			Log.e("myTag", "*******************BH6*****************");
+			 
 		 }
 		
 	}
