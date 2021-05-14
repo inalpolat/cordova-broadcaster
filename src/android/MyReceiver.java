@@ -23,7 +23,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 		sintent.putExtras( b);
 
-		LocalBroadcastManager.getInstance(super.webView.getContext()).sendBroadcast(sintent);		
+		LocalBroadcastManager.getInstance(this).sendBroadcast(sintent);		
 		
 		
 	}
