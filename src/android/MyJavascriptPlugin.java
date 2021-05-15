@@ -8,7 +8,7 @@ import android.util.Log;
 public class MyJavascriptPlugin extends CordovaPlugin {
   
   
-  CordovaWebView myWebView;
+  private CordovaWebView myWebView;
   
 public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
