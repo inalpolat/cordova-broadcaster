@@ -22,13 +22,13 @@ public class MyJavascriptPlugin extends CordovaPlugin {
 //        });    
 //  }
   
-  
-      cordova.getThreadPool().execute(new Runnable() {
-                  public void run() {
-                  Log.e("myTag", "*******************BH300*****************");              
-                  webView.loadUrl(method);
-                  Log.e("myTag", "*******************BH400*****************");                
-                }
-            });  
+    cordova.getThreadPool().execute(new Runnable() {
+            public void run() {
+                Log.e("myTag", "*******************BH300*****************");              
+                webView.loadUrl(method);
+                Log.e("myTag", "*******************BH400*****************");                
+            }
+        });
+    
   
 }
