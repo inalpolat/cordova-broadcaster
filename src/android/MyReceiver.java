@@ -29,8 +29,8 @@ public class MyReceiver extends BroadcastReceiver {
 			//sintent.putExtras( b);
 			//LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
 			 
-			Log.e("myTag", sintent.getAction());
-			Log.e("myTag", intent.getStringExtra("paymentBody"));
+			//Log.e("myTag", sintent.getAction());
+			//Log.e("myTag", intent.getStringExtra("paymentBody"));
 			Log.e("myTag", "*******************BH7*****************");
 			Log.e("myTag", "*******************BH8*****************");
 			 
