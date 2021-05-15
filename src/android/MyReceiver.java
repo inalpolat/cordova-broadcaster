@@ -19,23 +19,15 @@ public class MyReceiver extends BroadcastReceiver {
 			Log.e("myTag", "*******************BH3*****************");
 			Log.e("myTag", "*******************BH4*****************");
 			 			 
-			final Intent sintent = new Intent("com.bizimhesap.mobile.didShow");
-
-			final Bundle child = new Bundle();
-			child.putString( "name", "joker");
-
-			final Bundle b = new Bundle();
-			b.putString( "data", "test");
-			b.putBoolean( "valid", true );
-			b.putBundle( "child", child );
-
-			sintent.putExtras( b);
-
+			//final Intent sintent = new Intent("com.bizimhesap.mobile.didShow");
+			//final Bundle child = new Bundle();
+			//child.putString( "name", "joker");
+			//final Bundle b = new Bundle();
+			//b.putString( "data", "test");
+			//b.putBoolean( "valid", true );
+			//b.putBundle( "child", child );
+			//sintent.putExtras( b);
 			//LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
-
-			Context scontext=this.cordova.getActivity().getApplicationContext();			 
-			Intent cintent=new Intent(scontext.MainActivity.class); 
-			scontext.startActivity(cintent); 
 			 
 			Log.e("myTag", sintent.getAction());
 			Log.e("myTag", intent.getStringExtra("paymentBody"));
