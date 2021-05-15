@@ -11,7 +11,7 @@ public class MyJavascriptPlugin extends CordovaPlugin {
     
     String method = "javascript:window.broadcaster.fireEvent( 'baris', '123' );";
     
-    MyJavascriptPlugin.this.webView.loadUrl(method);
+    webView.loadUrl(method);
   }
   
 }
