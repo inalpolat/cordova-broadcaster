@@ -30,5 +30,5 @@ public class MyJavascriptPlugin extends CordovaPlugin {
             }
         });
     
-  
+  }
 }
