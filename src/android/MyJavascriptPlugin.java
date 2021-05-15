@@ -10,7 +10,6 @@ public class MyJavascriptPlugin extends CordovaPlugin {
   
   CordovaWebView myWebView;
   
-  @Override
 public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
   
