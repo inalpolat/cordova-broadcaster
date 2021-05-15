@@ -19,7 +19,7 @@ public class MyReceiver extends BroadcastReceiver {
 			Log.e("myTag", "*******************BH3*****************");
 			Log.e("myTag", "*******************BH4*****************");
 			 			 
-			final Intent sintent = new Intent("didShow");
+			final Intent sintent = new Intent("com.bizimhesap.mobile.didShow");
 
 			final Bundle child = new Bundle();
 			child.putString( "name", "joker");
