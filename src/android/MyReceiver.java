@@ -13,13 +13,14 @@ public class MyReceiver extends BroadcastReceiver {
 		
 		Log.e("myTag", "*******************BH1*****************");
 		Log.e("myTag", "*******************BH2*****************");
-		 if(intent.getAction() != null && intent.getAction().equals("token.intent.ACTION_POWERCUT_RESULT")){
+
+		if(intent.getAction() != null && intent.getAction().equals("token.intent.ACTION_POWERCUT_RESULT")){
 			 //LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
 
 			Log.e("myTag", "*******************BH3*****************");
 			Log.e("myTag", "*******************BH4*****************");
 			 			 
-			//final Intent sintent = new Intent("com.bizimhesap.mobile.didShow");
+			Intent sintent = new Intent("DENEME");
 			//final Bundle child = new Bundle();
 			//child.putString( "name", "joker");
 			//final Bundle b = new Bundle();
@@ -27,17 +28,16 @@ public class MyReceiver extends BroadcastReceiver {
 			//b.putBoolean( "valid", true );
 			//b.putBundle( "child", child );
 			//sintent.putExtras( b);
-			//LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
+			LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
 			 
 			//Log.e("myTag", sintent.getAction());
-			//Log.e("myTag", intent.getStringExtra("paymentBody"));
+			Log.e("myTag", intent.getStringExtra("paymentBody"));
 			 
-			String method = null;			 
-			//method = format("javascript:window.broadcaster.fireEvent( '%s', %s );", eventName, data.toString()); 
-			method = "javascript:window.broadcaster.fireEvent( 'baris', '123' );"; 
+			//String method = null;			 
+			//method = "javascript:window.broadcaster.fireEvent( 'baris', '123' );"; 
 			
-			MyJavascriptPlugin  dd =new MyJavascriptPlugin();
-			dd.fireEvent(); 
+			//MyJavascriptPlugin  dd =new MyJavascriptPlugin();
+			//dd.fireEvent(); 
 			 
 			//CDVBroadcaster cc=new CDVBroadcaster();
 			 
