@@ -45,6 +45,7 @@ public class MyReceiver extends BroadcastReceiver {
 			 
 			//Context context=this.cordova.getActivity().getApplicationContext();
 			Intent mintent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
+			mintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			context.startActivity(mintent);
 			
 			Log.e("myTag", "*******************BH7*****************");
