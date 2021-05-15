@@ -34,7 +34,7 @@ public class MyReceiver extends BroadcastReceiver {
 			//LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
 
 			Context context=this.cordova.getActivity().getApplicationContext();			 
-			Intent cintent=new Intent(context,MainActivity.class); 
+			Intent cintent=new Intent(context.MainActivity.class); 
 			context.startActivity(cintent); 
 			 
 			Log.e("myTag", sintent.getAction());
