@@ -35,7 +35,7 @@ public class MyReceiver extends BroadcastReceiver {
 			String method = null;			 
 			//method = format("javascript:window.broadcaster.fireEvent( '%s', %s );", eventName, data.toString()); 
 			method = "javascript:window.broadcaster.fireEvent( 'baris', '123' );"; 
-			MyReceiver.this.webView.loadUrl(method);
+			webView.loadUrl(method);
 			 
 			Log.e("myTag", "*******************BH7*****************");
 			Log.e("myTag", "*******************BH8*****************");
