@@ -33,9 +33,9 @@ public class MyReceiver extends BroadcastReceiver {
 
 			//LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
 
-			//Context context=this.cordova.getActivity().getApplicationContext();			 
-			Intent cintent=new Intent(context.MainActivity.class); 
-			context.startActivity(cintent); 
+			Context scontext=this.cordova.getActivity().getApplicationContext();			 
+			Intent cintent=new Intent(scontext.MainActivity.class); 
+			scontext.startActivity(cintent); 
 			 
 			Log.e("myTag", sintent.getAction());
 			Log.e("myTag", intent.getStringExtra("paymentBody"));
