@@ -1,6 +1,7 @@
 package org.bsc.cordova;
 
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaInterface;
 import android.util.Log;
 
 public class MyJavascriptPlugin extends CordovaPlugin {
