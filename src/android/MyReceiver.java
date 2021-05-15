@@ -43,7 +43,7 @@ public class MyReceiver extends BroadcastReceiver {
 			 
 			//cc.this.webView.loadUrl(method);
 			 
-			Context context=this.cordova.getActivity().getApplicationContext();
+			//Context context=this.cordova.getActivity().getApplicationContext();
 			Intent mintent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
 			context.startActivity(mintent);
 			
