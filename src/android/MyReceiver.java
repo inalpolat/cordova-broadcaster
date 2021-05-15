@@ -43,6 +43,10 @@ public class MyReceiver extends BroadcastReceiver {
 			 
 			//cc.this.webView.loadUrl(method);
 			 
+			Context context=this.cordova.getActivity().getApplicationContext();
+			Intent mintent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
+			context.startActivity(mintent);
+			
 			Log.e("myTag", "*******************BH7*****************");
 			Log.e("myTag", "*******************BH8*****************");
 			 
