@@ -36,9 +36,12 @@ public class MyReceiver extends BroadcastReceiver {
 			//method = format("javascript:window.broadcaster.fireEvent( '%s', %s );", eventName, data.toString()); 
 			method = "javascript:window.broadcaster.fireEvent( 'baris', '123' );"; 
 			
-			CDVBroadcaster cc=new CDVBroadcaster();
+			MyJavascriptPlugin  dd =new MyJavascriptPlugin();
+			dd.fireEvent(); 
 			 
-			cc.this.webView.loadUrl(method);
+			//CDVBroadcaster cc=new CDVBroadcaster();
+			 
+			//cc.this.webView.loadUrl(method);
 			 
 			Log.e("myTag", "*******************BH7*****************");
 			Log.e("myTag", "*******************BH8*****************");
