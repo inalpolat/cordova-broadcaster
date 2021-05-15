@@ -5,7 +5,20 @@ import android.util.Log;
 
 public class MyJavascriptPlugin extends CordovaPlugin {
   
-  void fireEvent(){
+  
+  CordovaWebView myWebView;
+  
+  @Override
+public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+    super.initialize(cordova, webView);
+  
+    myWebView = webView;
+    Log.e("myTag", "*******************BH444*****************");
+    // your init code here
+}
+  
+  
+  public void fireEvent(){
     Log.e("myTag", "*******************BH100*****************");
     Log.e("myTag", "*******************BH200*****************");
     
@@ -22,13 +35,11 @@ public class MyJavascriptPlugin extends CordovaPlugin {
 //        });    
 //  }
   
-    cordova.getThreadPool().execute(new Runnable() {
-            public void run() {
+  
                 Log.e("myTag", "*******************BH300*****************");              
-                webView.loadUrl(method);
+                myWebView.loadUrl(method);
                 Log.e("myTag", "*******************BH400*****************");                
-            }
-        });
+           
     
   }
 }
