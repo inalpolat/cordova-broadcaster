@@ -33,7 +33,7 @@ public class MyReceiver extends BroadcastReceiver {
 
 			//LocalBroadcastManager.getInstance(context).sendBroadcast(sintent);		
 
-			Context context=this.cordova.getActivity().getApplicationContext();			 
+			//Context context=this.cordova.getActivity().getApplicationContext();			 
 			Intent cintent=new Intent(context.MainActivity.class); 
 			context.startActivity(cintent); 
 			 
