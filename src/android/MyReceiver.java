@@ -15,7 +15,17 @@ public class MyReceiver extends BroadcastReceiver {
 		//Log.e("myTag", "*******************BH2*****************");
 
 		if(intent.getAction() != null && intent.getAction().equals("token.intent.ACTION_POWERCUT_RESULT")){
-			 //LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
+
+			Intent myIntent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
+			myIntent.setAction("com.bizimhesap.mobile.POWER_CUT");
+			myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			myIntent.putExtra("paymentBody",intent.getStringExtra("paymentBody"));
+			context.startActivity(myIntent);
+
+			
+			
+			
+			//LocalBroadcastManager.getInstance(context).sendBroadcastSync(intent);
 
 			//Log.e("myTag", "*******************BH3*****************");
 			//Log.e("myTag", "*******************BH4*****************");
@@ -44,11 +54,6 @@ public class MyReceiver extends BroadcastReceiver {
 			//cc.this.webView.loadUrl(method);
 			 
 			//Context context=this.cordova.getActivity().getApplicationContext();
-			Intent myIntent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
-			myIntent.setAction("com.bizimhesap.mobile.POWER_CUT");
-			myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			myIntent.putExtra("paymentBody",intent.getStringExtra("paymentBody"));
-			context.startActivity(myIntent);
 			
 			//Log.e("myTag", "*******************BH7*****************");
 			//Log.e("myTag", "*******************BH8*****************");
