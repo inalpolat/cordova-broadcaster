@@ -44,9 +44,10 @@ public class MyReceiver extends BroadcastReceiver {
 			//cc.this.webView.loadUrl(method);
 			 
 			//Context context=this.cordova.getActivity().getApplicationContext();
-			Intent mintent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
-			mintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			context.startActivity(mintent);
+			Intent myIntent=new Intent(context, com.bizimhesap.mobile.MainActivity.class);
+			myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			myIntent.putExtra("paymentBody",intent.getStringExtra("paymentBody"));
+			context.startActivity(myIntent);
 			
 			Log.e("myTag", "*******************BH7*****************");
 			Log.e("myTag", "*******************BH8*****************");
